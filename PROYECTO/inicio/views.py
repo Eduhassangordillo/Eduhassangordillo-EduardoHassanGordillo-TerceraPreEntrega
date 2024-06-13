@@ -38,7 +38,7 @@ def crear_bici_v2(request):
 
     return render(request, 'inicio/crear_bici_v2.html', {'formulario': formulario})
 
-def autos(request):
+def bicis(request):
     
     formulario = BuscarBici(request.GET)
     if formulario.is_valid():
